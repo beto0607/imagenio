@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../tipografias/helvetica.eot');
+    src: url('../tipografias/helvetica.eot?#iefix') format('embedded-opentype'),
+         url('../tipografias/helvetica.woff') format('woff'),
+         url('../tipografias/helvetica.ttf') format('truetype'),
+         url('../tipografias/helvetica.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../tipografias/Museo300-regular.ttf'), url('../tipografias/Museo500-regular.ttf'), url('../tipografias/Museo700-regular.ttf');
+    font-weight: 300, 500, 700;
+    font-style: normal;
+}

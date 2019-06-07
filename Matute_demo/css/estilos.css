@@ -1,0 +1,284 @@
+
+html {
+	height: 100%;
+	width: 100%;	
+}
+
+body {
+	background: #3E3D40 url(../img/bg.png) center center;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;	
+}
+
+	a img {
+		display: block;	
+	}
+
+/* CONTENEDOR */
+
+#contenedor {
+	height: 100%;
+	width: 100%;
+}
+
+/* INTRO */
+
+#intro {
+	padding: 50px 0;	
+}
+
+#logo {
+	height: 361px;
+	margin: 0 auto 50px auto;
+	width: 474px;	
+}
+
+#btn-jugar {
+	height: 88px;
+	margin: 0 auto;
+	width: 208px;
+}
+
+/* PRINCIPAL / JUEGO */
+
+#juego {
+	display: none;	
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 50px;
+	position: relative;
+}
+	
+	#imagenes {
+		min-height: 175px;	
+	}
+	
+		#imagenes span {
+			display: inline-block;
+			height: 170px;
+			margin: 0;
+			position: relative;
+			text-align: center;
+			width: 33%;
+		}
+		
+			#imagenes span img {
+				background: white;
+				border-radius: 10px;
+				height: 0;
+				left: 50%;
+				margin: 0; 
+				padding: 5px;
+				position: absolute;
+				top: 50%;
+				width: 0;
+			}
+		
+	#power_ups {
+		margin: 100px 0;
+		overflow: hidden;	
+	}
+	
+		#power_ups span {
+			display: inline-block;
+			margin-right: 30px;
+		}
+		
+		#power_ups span:last-child {
+			margin-right: 0;	
+		}
+		
+			#power_ups span a {
+				display: block;
+				height: 70px;
+				width: 65px;
+			}
+			
+			#power_ups span:nth-child(1) a {
+				background: url(../img/power_ups/power_up_01.png) no-repeat center center;	
+			}
+			
+			#power_ups span:nth-child(2) a {
+				background: url(../img/power_ups/power_up_02.png) no-repeat center center;	
+			}
+			
+			#power_ups span:nth-child(3) a {
+				background: url(../img/power_ups/power_up_03.png) no-repeat center center;	
+			}
+			
+			#power_ups span:nth-child(1) a:hover {
+				background: url(../img/power_ups/power_up_01_hover.png) no-repeat center center;	
+			}
+			
+			#power_ups span:nth-child(2) a:hover {
+				background: url(../img/power_ups/power_up_02_hover.png) no-repeat center center;	
+			}
+			
+			#power_ups span:nth-child(3) a:hover {
+				background: url(../img/power_ups/power_up_03_hover.png) no-repeat center center;	
+			}
+		
+	#imagen_principal {
+		background: url(../img/cerebro.png) no-repeat bottom center;
+		bottom: 0px;
+		height: 249px;
+		margin: 0 0 50px -131px;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		width: 263px;
+	}
+		
+		#imagen_principal img {
+			height: 0;	
+			left: 50%;
+			position: absolute;
+			top: 84%;
+			width: 0;
+		}
+		
+	#reloj_puntaje {
+		background: url(../img/reloj_puntaje.png) no-repeat center center;
+		height: 71px;
+		margin: 190px 72.25px 150px 0;
+		overflow: hidden;
+		width: 187px;
+	}
+		
+		#reloj {
+			height: 49px;
+			float: left;
+			position: relative;
+			width: 49px;
+			margin: 14.5px 0 0 6px;
+		}
+		
+			#aguja_reloj {
+				height: 49px;
+				left: 22px;
+				position: absolute;	
+				top: 0;
+				width: 4px;
+			}
+		
+		#puntaje {
+			float: left;
+			height: 49px;
+			width: 128px;
+		}
+		
+			#puntaje p {
+				color: white;
+				font: normal 30px Museo, Helvetica, Arial, sans-serif;
+				font-weight: 700;
+				margin: 22px 25px;
+			}
+			
+	#mensaje {
+		display: none;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+		#mensaje span {
+			display: inline-block;
+			height: 87px;
+			left: 50%;
+			margin: -43.5px 0 0 -164px;
+			position: absolute;
+			top: 500px;	
+			width: 307px;
+		}
+	
+/* PERDISTE */	
+
+#final {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}	
+	
+	#final span {
+		background: black;
+		display: none;
+		height: 100%;
+		left: 0;
+		opacity: 0.4;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+	#perdiste {
+		height: 356px;
+		left: 50%;
+		margin: -33px 0 0 -196.5px;
+		position: absolute;
+		top: 150px;
+		width: 237px;	
+	}
+		
+	#reintentar {
+		display: none;
+		height: 50px;
+		left: 50%;
+		margin: -24px 0 0 -120px;
+		position: absolute;
+		top: 500px;
+		width: 177px;
+	}
+
+/* GANASTE */	
+
+#final2 {
+	display: none;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}	
+	
+	#final2 span {
+		background: black;
+		height: 100%;
+		left: 0;
+		opacity: 0.4;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	
+	#ganaste {
+		height: 356px;
+		left: 50%;
+		margin: -33px 0 0 -196.5px;
+		position: absolute;
+		top: 15%;
+		width: 237px;		
+	}
+	
+	#continuar {
+		height: 50px;
+		left: 50%;
+		margin: -24px 0 0 -120px;
+		position: absolute;
+		top: 500px;
+		width: 177px;
+	}

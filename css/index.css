@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+/**
+ * author: Albanesi Roberto
+ * email: beto0607@gmail.com
+ */
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('Ubuntu-B.ttf');
+
+}
+
+canvas{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+}
